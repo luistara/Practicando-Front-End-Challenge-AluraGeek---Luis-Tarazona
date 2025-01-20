@@ -1,0 +1,183 @@
+/* Estilos responsivos para pantallas de 320px a 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* Estilos para el encabezado */
+  .header {
+    gap: 15%; /* Espacio entre elementos */
+    display: flex; /* Uso de flexbox */
+    height: 170px; /* Altura del encabezado */
+    align-items: center; /* Alineación centrada vertical */
+    justify-content: center; /* Alineación centrada horizontal */
+  }
+
+  /* Estilos para el título del encabezado */
+  .title-header {
+    font-size: 48px; /* Tamaño de fuente */
+  }
+
+  /* Ocultar íconos */
+  .icon-game-1,
+  .icon-game-2 {
+    display: none; /* No mostrar */
+  }
+
+  /* Estilos para el primer título */
+  .title_one {
+    display: flex; /* Uso de flexbox */
+    font-size: 53px; /* Tamaño de fuente */
+    text-align: center; /* Alineación centrada del texto */
+    margin-top: -2vh; /* Espacio superior negativo */
+  }
+
+  /* Estilos para productos */
+  .products {
+    width: 90%; /* Ancho de los productos */
+    height: 370px; /* Altura de los productos */
+    display: flex; /* Uso de flexbox */
+    background: #fff; /* Fondo blanco */
+    margin-left: 20px; /* Espacio izquierdo */
+  }
+
+  /* Estilos para las tarjetas */
+  .cards {
+    gap: 40px; /* Espacio entre tarjetas */
+    width: 40px; /* Ancho de las tarjetas */
+    display: flex; /* Uso de flexbox */
+    flex-wrap: nowrap; /* No permitir salto de línea */
+  }
+
+  /* Estilos para las tarjetas objetivo */
+  .target_cards {
+    box-shadow: -11px 15px 1px 5px #00ff; /* Sombra de las tarjetas */
+  }
+
+  /* Estilos para el texto del producto */
+  .product_text {
+    font-size: 60px; /* Tamaño de fuente */
+    margin-top: -71px; /* Espacio superior negativo */
+    margin-left: 150px; /* Espacio izquierdo */
+  }
+
+  /* Estilos para el formulario de añadir producto */
+  .form_add_product {
+    display: flex; /* Uso de flexbox */
+    margin-top: 20px; /* Espacio superior */
+  }
+
+  /* Estilos para los campos del formulario */
+  #nombre,
+  #imagen,
+  #precio {
+    width: 250px; /* Ancho de los campos */
+    margin-left: -190px; /* Espacio izquierdo negativo */
+  }
+
+  /* Estilos para el botón de enviar */
+  .btn-submit {
+    width: 130px; /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+    margin-left: -180px; /* Espacio izquierdo negativo */
+  }
+
+  /* Estilos para el botón de limpiar */
+  .btn-clear {
+    width: 130px; /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+  }
+
+  /* Estilos para el texto del pie de página */
+  .text_footer {
+    font-size: 40px; /* Tamaño de fuente */
+  }
+
+  /* Estilos para el párrafo del pie de página */
+  .footer_parraf {
+    margin-top: 20px; /* Espacio superior */
+    font-size: 30px; /* Tamaño de fuente */
+  }
+
+  /* Ocultar íconos del pie de página */
+  .footer_icons {
+    display: none; /* No mostrar */
+  }
+}
+
+/* Estilos responsivos para pantallas de 768px a 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para el título del encabezado */
+  .title-header {
+    font-size: 110px; /* Tamaño de fuente */
+    margin-left: 10%; /* Espacio izquierdo */
+  }
+
+  /* Ocultar íconos */
+  .icon-game-1,
+  .icon-game-2 {
+    display: none; /* No mostrar */
+  }
+
+  /* Estilos para el primer título */
+  .title_one {
+    font-size: 120px; /* Tamaño de fuente */
+    margin-left: 14%; /* Espacio izquierdo */
+  }
+
+  /* Estilos para el texto del producto */
+  .product_text {
+    width: 250px; /* Ancho del texto */
+    margin-top: -9%; /* Espacio superior negativo */
+    margin-left: 45%; /* Espacio izquierdo */
+  }
+
+  /* Estilos para productos */
+  .products {
+    width: 484px; /* Ancho de los productos */
+    margin-left: 22%; /* Espacio izquierdo */
+  }
+
+  /* Estilos para las tarjetas */
+  .cards {
+    gap: 10px; /* Espacio entre tarjetas */
+    width: 100%; /* Ancho de las tarjetas */
+    display: flex; /* Uso de flexbox */
+    margin-left: -25px; /* Espacio izquierdo negativo */
+  }
+
+  /* Estilos para los campos del formulario */
+  #nombre,
+  #imagen,
+  #precio {
+    width: 600px; /* Ancho de los campos */
+    margin-left: -400px; /* Espacio izquierdo negativo */
+  }
+
+  /* Estilos para el botón de enviar */
+  .btn-submit {
+    width: 250px; /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+    margin-left: -330px; /* Espacio izquierdo negativo */
+  }
+
+  /* Estilos para el botón de limpiar */
+  .btn-clear {
+    width: 250px; /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+  }
+
+  /* Estilos para el texto del pie de página */
+  .text_footer {
+    font-size: 80px; /* Tamaño de fuente */
+    margin-left: 9%; /* Espacio izquierdo */
+  }
+
+  /* Estilos para el párrafo del pie de página */
+  .footer_parraf {
+    font-size: 40px; /* Tamaño de fuente */
+    margin-top: 20px; /* Espacio superior */
+    margin-left: 7%; /* Espacio izquierdo */
+  }
+
+  /* Ocultar íconos del pie de página */
+  .footer_icons {
+    display: none; /* No mostrar */
+  }
+}

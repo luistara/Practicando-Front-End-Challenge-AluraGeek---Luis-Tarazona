@@ -1,0 +1,59 @@
+/* Estilos responsivos para pantallas de 320px a 480px */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* Estilos para el texto */
+  .text {
+    display: flex; /* Uso de flexbox */
+    font-size: 160px; /* Tamaño de fuente */
+    margin-top: 50px; /* Espacio superior */
+    margin-left: 10%; /* Espacio izquierdo */
+    text-align: center; /* Alineación centrada del texto */
+  }
+
+  /* Estilos para el botón */
+  .btn-1 {
+    width: 300px; /* Ancho del botón */
+    height: 80px; /* Altura del botón */
+    margin: 0px auto; /* Márgenes automáticos */
+    font-size: 60px; /* Tamaño de fuente */
+    margin-top: 20%; /* Espacio superior */
+    margin-left: 10%; /* Espacio izquierdo */
+    color: #000000; /* Color del texto */
+    background: #a9db1b; /* Fondo del botón */
+    box-shadow: -11px 15px 1px 5px #000; /* Sombra del botón */
+  }
+}
+
+/* Estilos responsivos para pantallas de 768px a 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para el texto */
+  .text {
+    margin-left: 18%; /* Espacio izquierdo */
+  }
+
+  /* Estilos para el botón */
+  .btn-1 {
+    width: 400px; /* Ancho del botón */
+    color: #000000; /* Color del texto */
+    background: #a9db1b; /* Fondo del botón */
+    margin-top: 150px; /* Espacio superior */
+    box-shadow: -11px 15px 1px 5px #000; /* Sombra del botón */
+  }
+}
+
+/* Estilos responsivos para pantallas de 1025px a 1200px */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  /* Estilos para el texto */
+  .text {
+    margin-left: 50%; /* Espacio izquierdo */
+    font-size: 100px; /* Tamaño de fuente */
+  }
+
+  /* Estilos para el botón */
+  .btn-1 {
+    width: 400px; /* Ancho del botón */
+    color: #000000; /* Color del texto */
+    background: #a9db1b; /* Fondo del botón */
+    margin-top: 150px; /* Espacio superior */
+    box-shadow: -11px 15px 1px 5px #000; /* Sombra del botón */
+  }
+}

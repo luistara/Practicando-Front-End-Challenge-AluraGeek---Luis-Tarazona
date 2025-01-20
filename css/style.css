@@ -1,0 +1,304 @@
+/* Definición de variables CSS para colores */
+:root {
+  --color-uno: #00708f;
+  --color-dos: #ffffff;
+  --color-tres: #db0210;
+  --color-cuatro: #9549d0;
+  --color-cinco: #1130f4;
+}
+
+/* Reiniciar márgenes y relleno de todos los elementos */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+  background-image: url(/img/main.jpg); /* Imagen de fondo */
+  background-size: cover; /* Cubrir todo el fondo */
+  background-repeat: repeat; /* Repetir la imagen */
+  background-position: center; /* Centrar la imagen de fondo */
+}
+
+/* Estilos para el encabezado */
+.header {
+  gap: 50px; /* Espacio entre elementos */
+  height: 150px; /* Altura del encabezado */
+  display: flex; /* Uso de flexbox */
+  align-items: center; /* Alineación centrada vertical */
+  justify-content: center; /* Alineación centrada horizontal */
+  background: var(--color-uno); /* Fondo usando variable */
+  color: var(--color-dos); /* Color del texto usando variable */
+}
+
+/* Estilos para el título del encabezado */
+.title-header {
+  font-size: 100px; /* Tamaño de fuente */
+  font-weight: 900; /* Grosor de fuente */
+  font-optical-sizing: auto; /* Tamaño óptico de fuente */
+  font-family: sans-serif; /* Familia de fuentes */
+}
+
+/* Animaciones */
+.header .icon-game-1 {
+  top: 0;
+  left: 50%;
+  animation: flotar 3s ease-in-out infinite alternate; /* Animación de flotación */
+}
+
+.header .icon-game-2 {
+  top: 0;
+  left: 50%;
+  animation: flotar-dos 3s ease-in-out infinite alternate; /* Animación de flotación */
+}
+
+/* Estilos para el primer título */
+.title_one {
+  display: flex; /* Uso de flexbox */
+  font-size: 60px; /* Tamaño de fuente */
+  margin-left: 13%; /* Espacio izquierdo */
+  margin-top: 60px; /* Espacio superior */
+  color: var(--color-dos); /* Color del texto usando variable */
+  font-family: sans-serif; /* Familia de fuentes */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0)
+  ); /* Degradado de fondo */
+  padding: 10px 20px; /* Ajuste de espacio alrededor del texto */
+}
+
+/* Estilos para productos */
+.products {
+  width: 860px; /* Ancho de los productos */
+  height: 840px; /* Altura de los productos */
+  display: flex; /* Uso de flexbox */
+  cursor: pointer; /* Cursor de puntero */
+  margin-top: 100px; /* Espacio superior */
+  margin-left: 10px; /* Espacio izquierdo */
+  overflow-y: scroll; /* Desplazamiento vertical */
+  border-radius: 20px; /* Bordes redondeados */
+  margin-bottom: 120px; /* Espacio inferior */
+  scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+/* Estilos para las tarjetas */
+.cards {
+  width: 90%; /* Ancho de las tarjetas */
+  display: flex; /* Uso de flexbox */
+  padding: 20px; /* Relleno de las tarjetas */
+  flex-wrap: wrap; /* Permitir salto de línea */
+  flex-direction: row; /* Dirección de las tarjetas */
+}
+
+.target_cards {
+  width: 220px; /* Ancho de las tarjetas objetivo */
+  height: 300px; /* Altura de las tarjetas objetivo */
+  margin-top: 5%; /* Espacio superior */
+  margin-left: 3%; /* Espacio izquierdo */
+  text-decoration: none; /* Sin decoración de texto */
+  border-radius: 20px; /* Bordes redondeados */
+  transition: all 400ms; /* Transición suave */
+  background: #1fb1c78b; /* Fondo */
+}
+
+.target_cards:hover {
+  cursor: pointer; /* Cursor de puntero */
+  transition: all 400ms; /* Transición suave */
+  background: #c0c0c0; /* Fondo al pasar el cursor */
+  transform: translateY(-14px); /* Desplazamiento vertical */
+}
+
+/* Estilos para las imágenes de las tarjetas */
+.img_product {
+  width: 140px; /* Ancho de la imagen */
+  height: 130px; /* Altura de la imagen */
+  margin: 20px; /* Espacio alrededor */
+  margin-top: 15px; /* Espacio superior */
+  margin-left: 35px; /* Espacio izquierdo */
+}
+
+/* Estilos y fuentes */
+.text_product {
+  width: 200px; /* Ancho del texto */
+  color: #050deb; /* Color del texto */
+  font-size: 27px; /* Tamaño de fuente */
+  margin-left: 25px; /* Espacio izquierdo */
+  margin-top: -8px; /* Espacio superior negativo */
+  font-weight: 800; /* Grosor de fuente */
+  font-family: "Pixelify Sans", sans-serif; /* Familia de fuentes */
+}
+
+.price_product {
+  color: #1e1d1d; /* Color del precio */
+  font-size: 23px; /* Tamaño de fuente */
+  font-weight: 800; /* Grosor de fuente */
+  margin-top: 18px; /* Espacio superior */
+  margin-left: 25px; /* Espacio izquierdo */
+  font-family: "Pixelify Sans", sans-serif; /* Familia de fuentes */
+}
+
+.material-symbols-outlined {
+  display: flex; /* Uso de flexbox */
+  margin-top: -40px; /* Espacio superior negativo */
+  margin-left: 180px; /* Espacio izquierdo */
+  border: none; /* Sin borde */
+  background: #c0c0c0; /* Fondo */
+  cursor: pointer; /* Cursor de puntero */
+}
+
+/* Estilos para la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 5px; /* Ancho de la barra de desplazamiento */
+  height: -3px; /* Altura de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-seis); /* Fondo de la barra */
+  border-radius: 60px; /* Bordes redondeados */
+  background: #ffffff; /* Fondo */
+}
+
+::-webkit-scrollbar-button {
+  width: 5px; /* Ancho del botón */
+  height: -3px; /* Altura del botón */
+}
+
+/* Sección para agregar productos */
+.product_text {
+  width: 34%; /* Ancho del texto */
+  display: flex; /* Uso de flexbox */
+  font-size: 60px; /* Tamaño de fuente */
+  margin-left: 66%; /* Espacio izquierdo */
+  margin-top: -70%; /* Espacio superior negativo */
+  justify-content: end; /* Alineación a la derecha */
+  color: var(--color-dos); /* Color del texto usando variable */
+  font-family: sans-serif; /* Familia de fuentes */
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0)
+  ); /* Degradado de fondo */
+}
+
+.form_add_product {
+  display: flex; /* Uso de flexbox */
+  margin-top: 4%; /* Espacio superior */
+  margin-left: 65%; /* Espacio izquierdo */
+  flex-direction: column; /* Dirección de la flexbox */
+}
+
+#nombre,
+#imagen,
+#precio {
+  width: 400px; /* Ancho de los campos */
+  height: 60px; /* Altura de los campos */
+  border: none; /* Sin borde */
+  padding: 10px; /* Relleno */
+  margin-top: 8%; /* Espacio superior */
+  font-size: 24px; /* Tamaño de fuente */
+  letter-spacing: 3px; /* Espaciado de letras */
+  color: var(--color-dos); /* Color del texto usando variable */
+  background: var(--color-uno); /* Fondo usando variable */
+  border-bottom: 2px solid #fff; /* Borde inferior */
+  font-family: sans-serif; /* Familia de fuentes */
+}
+
+input:focus {
+  outline: none; /* Sin contorno */
+  font-size: 30px; /* Tamaño de fuente */
+}
+
+input::placeholder {
+  color: #fff; /* Color del marcador */
+  font-size: 25px; /* Tamaño de fuente */
+  font-family: sans-serif; /* Familia de fuentes */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  width: 90px; /* Ancho del botón */
+  height: 60px; /* Altura del botón */
+  border: none; /* Sin borde */
+}
+
+.btn-submit {
+  width: 200px; /* Ancho del botón */
+  height: 60px; /* Altura del botón */
+  border: none; /* Sin borde */
+  font-size: 30px; /* Tamaño de fuente */
+  cursor: pointer; /* Cursor de puntero */
+  margin-top: 35px; /* Espacio superior */
+  letter-spacing: 2px; /* Espaciado de letras */
+  border-radius: 30px; /* Bordes redondeados */
+  background: #ffffff; /* Fondo */
+  transition: all 500ms; /* Transición suave */
+  font-family: sans-serif; /* Familia de fuentes */
+}
+
+.btn-clear {
+  width: 200px; /* Ancho del botón */
+  height: 60px; /* Altura del botón */
+  border: none; /* Sin borde */
+  color: #000; /* Color del texto */
+  cursor: pointer; /* Cursor de puntero */
+  font-size: 30px; /* Tamaño de fuente */
+  border-radius: 30px; /* Bordes redondeados */
+  letter-spacing: 2px; /* Espaciado de letras */
+  background: #ffffff; /* Fondo */
+  transition: all 500ms; /* Transición suave */
+  font-family: sans-serif; /* Familia de fuentes */
+}
+
+.btn-submit:hover {
+  color: #ffffff; /* Color del texto al pasar el cursor */
+  background-color: #db0210; /* Fondo al pasar el cursor */
+  transition: all 500ms ease; /* Transición suave */
+}
+
+.btn-clear:hover {
+  color: #ffffff; /* Color del texto al pasar el cursor */
+  background-color: #db0210; /* Fondo al pasar el cursor */
+  transition: all 500ms ease; /* Transición suave */
+}
+
+/* Estilos para el pie de página */
+.footer {
+  height: 150px; /* Altura del pie de página */
+  display: flex; /* Uso de flexbox */
+  flex-direction: column; /* Dirección de la flexbox */
+  background-color: var(--color-header); /* Fondo usando variable */
+  margin-top: 20%; /* Espacio superior */
+}
+
+.text_footer {
+  margin-top: -20px; /* Espacio superior negativo */
+  font-size: 60px; /* Tamaño de fuente */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alineación centrada del texto */
+  font-family: sans-serif; /* Familia de fuentes */
+}
+
+.footer_parraf {
+  margin-top: 10px; /* Espacio superior */
+  font-size: 60px; /* Tamaño de fuente */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alineación centrada del texto */
+  font-family: sans-serif; /* Familia de fuentes */
+}
+
+.footer_icons {
+  margin-left: 120px; /* Espacio izquierdo */
+  margin-top: -4%; /* Espacio superior negativo */
+}
+
+.ghost-1,
+.ghost-2,
+.ghost-3 {
+  margin-left: 20px; /* Espacio izquierdo */
+  margin-top: -40%; /* Espacio superior negativo */
+  max-width: 3%; /* Ancho máximo */
+  min-height: 10%; /* Altura mínima */
+  animation: ghost 2s linear infinite; /* Animación infinita */
+}

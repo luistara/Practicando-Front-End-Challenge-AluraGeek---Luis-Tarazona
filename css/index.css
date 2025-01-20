@@ -1,0 +1,54 @@
+/* Definición de variables CSS para colores */
+:root {
+  --color-uno: #3d00f5;
+  --color-dos: #ffffff;
+  --color-tres: #db0210;
+  --color-cuatro: #9549d0;
+  --color-cinco: #1130f4;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+  background-image: url(/img/index.jpg); /* Imagen de fondo */
+  background-size: cover; /* Cubrir todo el fondo */
+  background-repeat: repeat; /* Repetir la imagen */
+  background-position: center; /* Centrar la imagen de fondo */
+}
+
+/* Reiniciar márgenes y relleno de todos los elementos */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  display: flex; /* Uso de flexbox para alineación */
+  margin-top: 20%; /* Espacio superior del 20% */
+  align-items: center; /* Alineación centrada vertical */
+  justify-content: center; /* Alineación centrada horizontal */
+}
+
+/* Estilos para el texto */
+.text {
+  font-size: 100px; /* Tamaño de fuente */
+  margin-top: -120px; /* Espacio superior negativo */
+  color: var(--color-dos); /* Color de fuente variable */
+  font-family: sans-serif; /* Familia de fuentes */
+}
+
+/* Estilos para el botón */
+.btn-1 {
+  color: white; /* Color del texto */
+  width: 320px; /* Ancho del botón */
+  height: 102px; /* Altura del botón */
+  border: none; /* Sin bordes */
+  margin-top: 3%; /* Espacio superior */
+  cursor: pointer; /* Cursor de puntero */
+  font-size: 60px; /* Tamaño de fuente */
+  margin-left: 40%; /* Espacio izquierdo */
+  border-radius: 20px; /* Bordes redondeados */
+  transition: all 400ms; /* Transición suave */
+  background: var(--color-uno); /* Fondo usando variable */
+  font-family: sans-serif; /* Familia de fuentes */
+}
